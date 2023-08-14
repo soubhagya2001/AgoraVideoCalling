@@ -1,0 +1,106 @@
+body{
+    box-sizing: border-box;
+    background:#0F2027;
+    margin: 0;
+    overflow: hidden;
+    background:-webkit-linear-gradient(to right, #8b0e1a, #203A43, #200869) ;
+    /* background: linear-gradient(to right, #29a825, #b3eb4ac0, #4f0b5e);
+     */
+
+     background: linear-gradient(109.6deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 98.8%);
+}
+
+#join-btn {
+    background-color: #ca0000;
+    border-radius: 100%;
+    box-shadow: rgba(255, 0, 0, 0.982) 0 -25px 18px -14px inset,rgba(255, 50, 50, 0.15) 0 1px 2px,rgba(255, 146, 14, 0.15) 0 2px 4px,rgba(233, 249, 9, 0.15) 0 4px 8px,rgba(243, 255, 18, 0.15) 0 8px 16px,rgba(228, 243, 14, 0.15) 0 16px 32px;
+    color: rgb(252, 189, 0);
+    cursor: pointer;
+    display: inline-block;
+    font-family: Garamond,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 100px 100px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 200px;
+    height:200px;
+    
+  }
+  
+  #join-btn:hover {
+    box-shadow: rgba(187, 44, 44, 0.35) 0 -25px 18px -14px inset,rgba(255, 72, 0, 0.852) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+  
+
+
+
+    
+
+
+#join-btn{
+    position: fixed;
+    top:40%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-100px;
+    font-size:30px;
+    padding:20px 40px;
+}
+
+#video-streams{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    height: 90vh;
+    width: 1400px;
+    margin:0 auto;
+}
+
+.video-container{
+    max-height: 100%;
+    border: 2px solid black;
+    background-color: #203A49;
+}
+
+.video-player{
+    height: 100%;
+    width: 100%;
+}
+
+button{
+    border:none;
+    background-color: cadetblue;
+    color:#fff;
+    padding:10px 20px;
+    font-size:16px;
+    margin:2px;
+    cursor: pointer;
+}
+
+#stream-controls{
+    display: none;
+    justify-content: center;
+    margin-top:0.5em;
+}
+
+@media screen and (max-width:1400px){
+    #video-streams{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 95%;
+    }
+}
+/* img{
+   width: 200px;
+   height: 300px;
+   object-fit: contain;
+   position: relative;
+   top: -140px;
+   left: 260px;
+   
+   
+} */
